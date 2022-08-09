@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     
 }
 .contenedorIndex{
@@ -21,7 +21,7 @@ body{
     ;
 }
 .navegador{
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     grid-area: header;
     height: 100px;
     display: flex;
@@ -51,7 +51,7 @@ header img{
     display: none;
 }
 main{
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     grid-area: main;
 }
 .primerBloque{
@@ -86,12 +86,12 @@ main{
     text-decoration: none;
 }
 .carrusel{
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     grid-area: section;
 }
 .carruselDos{
     display: none;
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     grid-area: carruselDos;
 }
 section img{
@@ -126,7 +126,7 @@ section img{
     font-size: 14px;
 }
 aside{
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     grid-area: aside;
 }
 aside h2{
@@ -140,7 +140,7 @@ aside h2{
     gap: 0.4rem;
 }
 footer{
-    background-color: rgb(6, 17, 33);
+    background-color: rgb(6, 6, 7);
     grid-area: footer;
 }
 .pieDePagina{
@@ -398,7 +398,7 @@ footer p{
         height: 720px;
     }
     .carruselVideoDos{
-        background-color: rgb(6, 17, 33);
+        background-color: rgb(6, 6, 7);
         grid-area: asideDos;
     }
     .contenedorCrypto{
@@ -461,7 +461,7 @@ footer p{
     }
     .carruselDos{
         display: block;
-        background-color: rgb(6, 17, 33);
+        background-color: rgb(6, 6, 7);
         grid-area: carruselDos;
         text-align: center;
     }
@@ -543,7 +543,7 @@ footer p{
         height: 720px;
     }
     .carruselVideoDos{
-        background-color: rgb(6, 17, 33);
+        background-color: rgb(6, 6, 7);
         grid-area: asideDos;
     }
     .contenedorCrypto{
