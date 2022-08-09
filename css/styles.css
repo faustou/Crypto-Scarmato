@@ -1,0 +1,585 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(6, 17, 33);
+    
+}
+.contenedorIndex{
+    height: 80vh;
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "section section section"
+    "aside aside aside"
+    "footer footer footer"
+    ;
+}
+.navegador{
+    background-color: rgb(6, 17, 33);
+    grid-area: header;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+}
+.menu li a:hover{
+    color: white;
+}
+.menu li a{
+    font-size: small;
+    color: grey;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+header img{
+    height: 45px;
+    width: 45px;
+}
+.logotipoGrande{
+    display: none;
+}
+main{
+    background-color: rgb(6, 17, 33);
+    grid-area: main;
+}
+.primerBloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+#fondo{
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/bannerPrincipal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.textoBienvenida{
+    text-align: center;
+    color: white;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.botonBienvenida{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 30px;
+    color: black;
+    text-decoration: none;
+}
+.carrusel{
+    background-color: rgb(6, 17, 33);
+    grid-area: section;
+}
+.carruselDos{
+    display: none;
+    background-color: rgb(6, 17, 33);
+    grid-area: carruselDos;
+}
+section img{
+    height: 100px;
+    width: 140px;
+}
+.carrusel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+.seccionesCarrusel{
+    display: flex;
+    justify-content: left;
+}
+.seccionTexto{
+    padding: 0.5rem 0.5rem;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: white;
+}
+.seccionTexto h4{
+    font-size: 14px;
+    font-style: normal;
+}
+.seccionTexto a{
+    color: grey;
+    text-decoration: none;
+    font-size: 14px;
+}
+aside{
+    background-color: rgb(6, 17, 33);
+    grid-area: aside;
+}
+aside h2{
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+.carruselVideo{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+footer{
+    background-color: rgb(6, 17, 33);
+    grid-area: footer;
+}
+.pieDePagina{
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    color: white;
+    width: 100%;
+    height: 5rem;
+    margin-top: 1rem;
+}
+.pieDePagina div ul li a:hover{
+    color: grey;
+}
+.pieDePaginaRedes{
+    display: flex;
+    gap: 2rem;
+}
+.pieDePagina h5{
+    font-size: 1rem;
+}
+.pieDePagina ul li a{
+    text-decoration: none;
+    color: white;
+}
+.pieDePagina ul{
+    list-style-type: none;
+}
+footer p{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+}
+.contenedorCrypto{
+    height: 80vh;
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "section section section"
+    "aside aside aside"
+    "footer footer footer"
+    ;
+}
+.seccionMonedas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.monedaUno{
+    display: flex;
+    background-color: white;
+    color: black;
+    gap: 1rem;
+    height: 100px;
+    width: 160px;
+    border-radius: 5px;
+    align-items: center;
+}
+.monedaBtc{
+    color: gray;
+}
+.monedaParteUno{
+    margin-left: 0.5rem;
+}
+.monedaParteUno h4{
+    margin-top: 0.8rem;
+}
+.monedaParteUno img{
+    height: 25px;
+    width: 25px;
+}
+.monedaBtcPorcentaje{
+    color: green;
+    margin-left: 0.4rem;
+}
+.monedaBtcPorcentajeBajo{
+    color: red;
+    margin-left: 0.4rem;
+}
+.topCryptoTitulo{
+    color: white;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.informacionCrypto{
+    display: flex;
+    justify-content: center;
+    color: white;
+    grid-area: section;
+    margin-top: 1rem;
+}
+.informacionCryptoTexto{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 300px;
+    text-align: center;
+    gap: 1rem;
+}
+.contenedorImagenEstadistica{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.contenedorImagenEstadistica img{
+    width: 300px;
+    height: 360px;
+}
+.carruselVideoDos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.carruselVideoYoutube{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+.contenedorNFT{
+    height: 80vh;
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "footer footer footer"
+    ;
+}
+.contenedorNosotros{
+    height: 80vh;
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+.contenedorPerfiles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.textoParaMartin{
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    height: 100px;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 50rem;
+    gap: 3rem;
+}
+.contenedorContacto{
+    height: 80vh;
+    display: grid;
+
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+
+
+
+@media screen and (min-width: 600px){
+
+    .logotipoGrande{
+        display: block;
+        width: 15rem;
+        height: 2rem;
+    }
+    .logotipoChico{
+        display: none;
+    }
+    .contenedorIndex{
+        height: 100vh;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section aside"
+        "footer footer footer"
+        ;
+    }
+    .carruselVideo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+    aside h2{
+        margin: 0.5rem 0rem 0.5rem 0rem;
+        font-size: large;
+    }
+    .videos iframe{
+        width: 300px;
+        height: 170px;
+        border: 0;
+    }
+    .pieDePagina{
+        justify-content: space-evenly;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    .pieDePagina h5{
+        font-size: 1.2rem;
+    }
+    section img{
+        height: 200px;
+        width: 280px;
+    }
+    .navegador{
+        justify-content: space-around;
+    }
+    .seccionTexto{
+        padding: 0.5rem 0.5rem;
+        font-size: 1.5rem;
+    }
+    .seccionTexto h4{
+        font-size: 1.2rem;
+        font-style: normal;
+    }
+    .seccionTexto a{
+        font-size: 1.4rem;
+    }
+    .pieDePagina ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+
+    }
+    .informacionCryptoTexto{
+        width: 600px;
+        gap: 2rem;
+    }
+    .contenedorImagenEstadistica img{
+        width: 600px;
+        height: 720px;
+    }
+    .carruselVideoDos{
+        background-color: rgb(6, 17, 33);
+        grid-area: asideDos;
+    }
+    .contenedorCrypto{
+
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section section"
+        "asideDos asideDos asideDos"
+        "footer footer footer"
+        ;
+    }
+    .carruselVideoYoutube{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .videosEnCrypto iframe{
+        width: 230px;
+        height: 120px;
+        border: 0;
+    }
+    .carruselVideoDos h2{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .informacionCryptoTexto div h2{
+        font-size: 1.7rem;
+    }
+    .informacionCryptoTexto div p{
+        font-size: 1.3rem;
+    }
+    .topCryptoTitulo{
+        font-size: 1.7rem;
+    }
+    .contenedorVideoNFT iframe{
+        width: 535px;
+        height: 300px;
+    }
+    .contenedorPerfiles{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0rem;
+    }
+    .textoParaMartin{
+        height: 120px;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .contenedorIndex{
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section aside"
+        "carruselDos carruselDos aside"
+        "footer footer footer"
+        ;
+    }
+    .carruselDos{
+        display: block;
+        background-color: rgb(6, 17, 33);
+        grid-area: carruselDos;
+        text-align: center;
+    }
+    .carruselDos a img{
+        height: 280px;
+        width: 488px;
+    }
+    .carruselDos h2{
+        margin: 0.5rem 0rem 0.5rem 0rem;
+        font-size: large;
+        color: white;
+    }
+    .seccionesCarruselDos{
+        display: flex;
+        justify-content: center;
+    }
+    .seccionesCarrusel{
+        display: flex;
+        justify-content: center;
+    }
+    .seccionTexto{
+        padding: 0.5rem 0.5rem;
+        font-size: 1.5rem;
+        width: 13rem;
+    }
+    #fondo{
+        width: 100%;
+        height: 50rem;
+        background-image: url(../img/bannerPrincipal.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .textoBienvenida{
+        text-align: center;
+        color: white;
+        font-size: 3.3rem;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+    }
+    .botonBienvenida{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 800;
+        background-color: white;
+        border-radius: 20px;
+        padding: 15px 40px;
+        color: black;
+        text-decoration: none;
+    }
+    .navegador{
+        height: 60px;
+        justify-content: space-evenly;
+    }
+    .menu{
+        gap: 3rem;
+    }
+    .carruselVideoYoutube{
+        gap: 2rem;
+    }
+    .videosEnCrypto iframe{
+        width: 340px;
+        height: 190px;
+    }
+    .carruselVideoDos h2{
+        text-align: center;
+        font-size: 1.7rem;
+    }
+    .informacionCryptoTexto div h2{
+        font-size: 2.3rem;
+    }
+    .informacionCryptoTexto div p{
+        font-size: 1.5rem;
+    }
+    .topCryptoTitulo{
+        font-size: 1.5rem;
+    }
+    .contenedorImagenEstadistica img{
+        width: 600px;
+        height: 720px;
+    }
+    .carruselVideoDos{
+        background-color: rgb(6, 17, 33);
+        grid-area: asideDos;
+    }
+    .contenedorCrypto{
+
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "section section section"
+        "asideDos asideDos asideDos"
+        "footer footer footer"
+        ;
+    }
+    .seccionMonedas{
+        gap: 2rem;
+    }
+    .informacionCrypto{
+        padding-top: 2rem;
+    }
+    .informacionCryptoTexto{
+        justify-content: center;
+        width: 1000px;
+    }
+    .contenedorImagenEstadistica{
+        align-items: center;
+    }
+    .contenedorVideoNFT iframe{
+        width: 560px;
+        height: 315px;
+    }
+    .contenedorPerfiles{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0rem;
+    }
+    .textoParaMartin{
+        height: 120px;
+    }
+}
