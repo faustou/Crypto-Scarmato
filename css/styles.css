@@ -13,7 +13,6 @@ body{
     display: grid;
 
     grid-template-areas: 
-    "header header header"
     "main main main"
     "section section section"
     "aside aside aside"
@@ -34,8 +33,23 @@ body{
     gap: 1rem;
     list-style-type: none;
 }
+.bg-menu-color{
+    background-color: rgb(6, 17, 33);
+}
+.nav-item a{
+    color: gray;
+}
+.navbar-toggler-icon{
+    color: azure;
+}
+.nav-item a:hover{
+    color: gray;
+}
 .menu li a:hover{
     color: white;
+}
+.dropdown-menu{
+    background-color: rgb(6, 17, 33);
 }
 .menu li a{
     font-size: small;
@@ -72,7 +86,7 @@ main{
 .textoBienvenida{
     text-align: center;
     color: white;
-    font-size: 2.1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
 }
@@ -146,10 +160,10 @@ footer{
 .pieDePagina{
     display: flex;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1rem;
     color: white;
     width: 100%;
-    height: 5rem;
+    height: 6.5rem;
     margin-top: 1rem;
 }
 .pieDePagina div ul li a:hover{
@@ -157,7 +171,7 @@ footer{
 }
 .pieDePaginaRedes{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 }
 .pieDePagina h5{
     font-size: 1rem;
@@ -175,6 +189,9 @@ footer p{
     color: white;
     text-align: center;
     padding-top: 5px;
+}
+ol, ul {
+    padding-left: 0rem;
 }
 .contenedorCrypto{
     height: 80vh;
@@ -211,7 +228,8 @@ footer p{
     margin-left: 0.5rem;
 }
 .monedaParteUno h4{
-    margin-top: 0.8rem;
+    margin-top: 0.4rem;
+    font-size: 1rem;
 }
 .monedaParteUno img{
     height: 25px;
@@ -271,7 +289,6 @@ footer p{
     display: grid;
 
     grid-template-areas: 
-    "header header header"
     "section section section"
     "footer footer footer"
     ;
@@ -281,7 +298,6 @@ footer p{
     display: grid;
 
     grid-template-areas: 
-    "header header header"
     "section section section"
     "main main main"
     "footer footer footer"
@@ -314,8 +330,7 @@ footer p{
     height: 80vh;
     display: grid;
 
-    grid-template-areas: 
-    "header header header"
+    grid-template-areas:
     "main main main"
     "footer footer footer"
     ;
@@ -336,7 +351,6 @@ footer p{
     .contenedorIndex{
         height: 100vh;
         grid-template-areas: 
-        "header header header"
         "main main main"
         "section section aside"
         "footer footer footer"
@@ -451,8 +465,7 @@ footer p{
 }
 @media screen and (min-width: 1024px){
     .contenedorIndex{
-        grid-template-areas: 
-        "header header header"
+        grid-template-areas:
         "main main main"
         "section section aside"
         "carruselDos carruselDos aside"
@@ -498,7 +511,7 @@ footer p{
     .textoBienvenida{
         text-align: center;
         color: white;
-        font-size: 3.3rem;
+        font-size: 3rem;
         text-transform: uppercase;
         font-family: 'Roboto', sans-serif;
     }
