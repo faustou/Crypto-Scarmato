@@ -77,7 +77,7 @@ main{
 }
 #fondo{
     width: 100%;
-    height: 20rem;
+    height: 40rem;
     background-image: url(../img/bannerPrincipal.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -323,7 +323,7 @@ ol, ul {
     justify-content: center;
     align-items: center;
     color: white;
-    height: 50rem;
+    height: 60rem;
     gap: 3rem;
 }
 .contenedorContacto{
@@ -335,15 +335,83 @@ ol, ul {
     "footer footer footer"
     ;
 }
+.form-label{
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.container-form{
+    margin-top: 2rem;
+}
+.container-form h1{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 3re;
+}
+.boton-enviar{
+    margin-top: 1rem;
+}
+.btn{
+    background-color: white;
+    color: gray;
+}
+.imagen-contacto-redes{
+    height: 45px;
+    width: 45px;
+}
+.contenedor-imagen-consulta{
+    display: none;
+}
 
+.texto-h1{
+    color: white;
+    text-align: start;
+}
+.redes-del-footer img, .redes-del-footer2 img{
+width: 15px;
+height: 15px;
+}
+.redes-del-footer2{
+    margin-top: 0.5rem;
+}
+.imagen-contactanos{
+    height: 100%;
+    width: 100%;
+}
+.contenedor-formulario{
+    margin-bottom: 3rem;
+}
+.text-reset{
+    text-decoration: 0;
+}
+.footer-no-wrap{
+    flex-wrap: nowrap;
+}
+.footer-separado{
+    gap: 0rem;
+}
+.h1-ultima-linea{
+    background-color: black;
+    height: 2rem;
+}
+.h1-ultima-linea, h1{
+    padding-top: 3px;
+    font-size: 1rem;
 
+}
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
     .logotipoGrande{
         display: block;
         width: 15rem;
         height: 2rem;
+    }
+    .container-fluid{
+        gap: 12rem;
     }
     .logotipoChico{
         display: none;
@@ -461,6 +529,20 @@ ol, ul {
     .textoParaMartin{
         height: 120px;
     }
+    .container-form{
+        max-width: 512px;
+    }
+    .contenedor-imagen-consulta{
+        display: flex;
+    }
+    .contenedor-redes-icons{
+        margin-top: 5rem;
+        margin-bottom: 3rem;
+    }
+    .footer-separado{
+        gap: 3rem;
+    }
+    
 
 }
 @media screen and (min-width: 1024px){
@@ -594,5 +676,11 @@ ol, ul {
     }
     .textoParaMartin{
         height: 120px;
+    }
+    .container-form{
+        max-width: 812px;
+    }
+    .footer-separado{
+        gap: 5rem;
     }
 }
